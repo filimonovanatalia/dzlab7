@@ -46,28 +46,35 @@
 int main() {
     setlocale(LC_ALL, "RUS");
     int hour;
-    printf("Ââĺäčňĺ âđĺě˙ (÷ŕńű îň 0 äî 23): ");
+    printf("Введите время (часы от 0 до 23): ");
     scanf("%d", &hour);
     switch (hour) {
     case 0: case 1: case 2: case 3: case 4: case 23:
-        printf("Ńďîęîéíîé íî÷č!\n");
+        printf("Спокойной ночи!\n");
         break;
     case 5: case 6: case 7: case 8: case 9: case 10: case 11:
-        printf("Äîáđîĺ óňđî!\n");
+        printf("Доброе утро!\n");
         break;
     case 12: case 13: case 14: case 15: case 16: case 17:
-        printf("Äîáđűé äĺíü!\n");
+        printf("Добрый день!\n");
         break;
     case 18: case 19: case 20: case 21: case 22:
-        printf("Äîáđűé âĺ÷ĺđ!\n");
+        printf("Добрый вечер!\n");
         break;
     default:
-        printf("Îřčáęŕ! Ââĺäčňĺ ÷čńëî îň 0 äî 23.\n");
+        printf("Ошибка! Введите число от 0 до 23.\n");
         break;
     }
     return 0;
 }
 ```
 ## 3. Результаты работы программы
+```
+Введите время (часы от 0 до 23): 7
+Доброе утро!
 
+C:\Users\User\source\repos\dzlab7\x64\Debug\dzlab7.exe (процесс 11780) завершил работу с кодом 0 (0x0).
+Нажмите любую клавишу, чтобы закрыть это окно:
+
+```
 
