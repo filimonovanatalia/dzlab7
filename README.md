@@ -40,15 +40,34 @@
 
 ## 2. Реализация программы
 ```c
+#include <stdio.h>
+#include <locale.h>
 
+int main() {
+    setlocale(LC_ALL, "RUS");
+    int hour;
+    printf("Ââĺäčňĺ âđĺě˙ (÷ŕńű îň 0 äî 23): ");
+    scanf("%d", &hour);
+    switch (hour) {
+    case 0: case 1: case 2: case 3: case 4: case 23:
+        printf("Ńďîęîéíîé íî÷č!\n");
+        break;
+    case 5: case 6: case 7: case 8: case 9: case 10: case 11:
+        printf("Äîáđîĺ óňđî!\n");
+        break;
+    case 12: case 13: case 14: case 15: case 16: case 17:
+        printf("Äîáđűé äĺíü!\n");
+        break;
+    case 18: case 19: case 20: case 21: case 22:
+        printf("Äîáđűé âĺ÷ĺđ!\n");
+        break;
+    default:
+        printf("Îřčáęŕ! Ââĺäčňĺ ÷čńëî îň 0 äî 23.\n");
+        break;
+    }
+    return 0;
+}
 ```
 ## 3. Результаты работы программы
-```
-Введите координаты точки x и y через пробел: 4 1
-Точка (4.00, 1.00) ПРИНАДЛЕЖИТ заштрихованной области.
-```
-```
-Введите координаты точки x и y через пробел: 5 6
-Точка (5.00, 6.00) НЕ ПРИНАДЛЕЖИТ заштрихованной области.
-```
+
 
