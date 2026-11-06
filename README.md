@@ -35,3 +35,8 @@
    
 5. Конец программы.
 ## Блок-схема
+
+<img width="922" height="472" alt="image" src="https://github.com/user-attachments/assets/882aa4b3-72b5-4924-a90b-35407fc12944" />
+
+1
+
